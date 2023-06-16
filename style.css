@@ -1,0 +1,147 @@
+html{
+	overflow-x: hidden;
+}
+
+header{
+	font-size: 2rem;
+	margin-block: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid darkgoldenrod;
+	padding-bottom: 1rem;
+}
+
+.btn{
+	border-radius: 0.4rem;
+	padding: 0.4rem 1rem;
+	background-color: darkcyan;
+	border-style: none;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.main{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 90vw;
+	height: 70vh;
+	margin: auto;
+	padding: 0;
+}
+
+.box{
+	width: 25vw;
+	height: 60vh;
+	margin: 0 1rem;
+	border: 2px dashed darkcyan;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+h2{
+	padding-bottom: 1rem;
+	margin-block: 0.3rem 1rem ;
+	text-align: center;
+	border-bottom: 2px solid darkgoldenrod;
+}
+
+.item{
+	width: 20vw;
+	height: 1rem;
+	padding: 1rem;
+	background-color: cyan;
+	margin: 1rem;
+	border-radius: 0.5rem;
+	cursor: grab;
+}
+
+#dialog{
+	border-style: none;
+	border-radius: 0.5rem;
+	width: 21%;
+	text-align: center;
+	padding-top: 1.5rem;
+}
+
+#dialog .dBtn{
+	margin: 1rem 6rem;
+	font-size: 0.9rem;
+	width: 5.4rem;
+	padding: 0.3rem 0.5rem;
+	cursor: pointer;
+	border-style: none;
+	border-radius: 5px;
+	background-color: rgba(173, 216, 230, 0.644);
+}
+#dialog .dBtn:hover{
+	background-color: rgb(173, 216, 230);
+}
+
+.toastBox{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 1rem;
+	animation: moveleft 0.5s linear forwards
+}
+
+.toast{
+	position: relative;
+	background-color: aquamarine;
+	margin-block: 0.5rem;
+	padding: .6rem 0.7rem;
+	border-radius: 0.5rem;
+	animation: moveleft 0.5s linear forwards
+}
+ @keyframes moveleft {
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+ }
+
+.toast::after{
+	content: ' ';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 90%;
+	height: 3px;
+	background-color: rgba(0, 0, 0, 0.678);
+	border-radius: 1rem;
+	animation: anim 4s linear forwards
+}
+ @keyframes anim {
+	100%{
+		width: 0;
+	}
+ }
+
+.footer{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-block: 1.5rem;
+}
+
+@media (max-width:1080px) {
+	.box{
+		padding-inline: 0.6rem 1rem ;
+		height: 22rem;
+	}
+	.item{
+		font-size: 1rem;
+		width: 19vw;
+		padding: 0.6rem;
+	}
+	.footer{
+		margin-block: 1.1rem;
+		border: 2px solid red;
+	}
+}
