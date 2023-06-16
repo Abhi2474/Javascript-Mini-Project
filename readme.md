@@ -8,7 +8,7 @@ It has the feature of `drag and drop`, `toast notification` and `popup notificat
 Clone the repository and start it with the live server
 
 ```bash
-git clone https://github.com/Abhi2474/mini-js-project.git
+git clone https://github.com/Abhi2474/Javascript-Mini-Project.git
 ```
 
 and the project is live now.
